@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #typed1{font-size: 20px; color: violet;}
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        $("document").ready(function(){
+            let typed = new Typed("#typed1",{
+                stringsElement:"#typed",
+                typeSpeed : 1,
+                loop: true,
+                backSpeed : 1,
+                cursorChar : "👀"
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="typed">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.aaaaa</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, soluta illum illo consectetur voluptatum obcaecati nam mollitia praesentium? Quam, eius.
+            <br>
+            Lorem ipsum dolor sit amet consectetur.
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, suscipit!
+        </p>
+    </div>
+    <span id="typed1"></span>
+</body>
+</html>
